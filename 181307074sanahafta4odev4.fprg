@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-23 11:06:19 AM"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtOEhPMVYySjsyMDE5LTEwLTIzOzEwOjM1OjExIEFNOzI5MzQ="/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtOEhPMVYySjsyMDE5LTEwLTIzOzExOjA2OjE5IEFNOzI7MzA1MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, birler, onlar, yuzlar, binler, onbinler" type="Integer" array="False" size=""/>
+            <do expression="sayi&gt;=100000 ||sayi&lt;9999">
+                <output expression="&quot;be&#351; basamakl&#305; bir say girin lutfen&quot;" newline="True"/>
+                <input variable="sayi"/>
+            </do>
+            <if expression="sayi&lt;=100000 &amp;&amp; sayi&gt;9999">
+                <then>
+                    <assign variable="birler" expression="sayi%10"/>
+                    <assign variable="onlar" expression="(sayi/10)%10"/>
+                    <assign variable="yuzlar" expression="(sayi/100)%10"/>
+                    <assign variable="binler" expression="(sayi/1000)%10"/>
+                    <assign variable="onbinler" expression="(sayi/10000)%10"/>
+                    <if expression="(birler==onbinler)&amp;&amp;(onlar==binler)&amp;&amp;(yuzlar==yuzlar)">
+                        <then>
+                            <output expression="&quot;girilen sayi palindrome sayidir&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Girilen sayi Palindrome sayi degildir&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="hata" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
