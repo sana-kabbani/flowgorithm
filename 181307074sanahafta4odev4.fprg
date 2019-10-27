@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="43"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-23 09:47:18 &#214;&#214;"/>
+        <attribute name="created" value="NDM7REVTS1RPUC1IREVVTkkyOzIwMTktMTAtMjM7MDk6MTI6Mzkgw5bDljsyNzM4"/>
+        <attribute name="edited" value="NDM7REVTS1RPUC1IREVVTkkyOzIwMTktMTAtMjM7MDk6NDc6MTggw5bDljsxOzI4NTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;1, say&#305;2, say&#305;3, say&#305;4, say&#305;5" type="String" array="False" size=""/>
+            <assign variable="say&#305;1" expression="&quot;&quot;"/>
+            <assign variable="say&#305;2" expression="&quot;&quot;"/>
+            <assign variable="say&#305;3" expression="&quot;&quot;"/>
+            <assign variable="say&#305;4" expression="&quot;&quot;"/>
+            <assign variable="say&#305;5" expression="&quot;&quot;"/>
+            <output expression="&quot;say&#305;1 girin&quot;" newline="True"/>
+            <input variable="say&#305;1"/>
+            <output expression="&quot;say&#305;2 girin&quot;" newline="True"/>
+            <input variable="say&#305;2"/>
+            <output expression="&quot;say&#305;3 girin&quot;" newline="True"/>
+            <input variable="say&#305;3"/>
+            <output expression="&quot;say&#305;4 girin&quot;" newline="True"/>
+            <input variable="say&#305;4"/>
+            <output expression="&quot;say&#305;5 girin&quot;" newline="True"/>
+            <input variable="say&#305;5"/>
+            <if expression="say&#305;1=say&#305;5">
+                <then>
+                    <if expression="say&#305;2=say&#305;4">
+                        <then>
+                            <output expression="&quot;girdi&#287;iniz say&#305; palindromik de&#287;il&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;girdiniz say&#305; palindromik&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;girdi&#287;iniz say&#305; palindromik de&#287;il&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
